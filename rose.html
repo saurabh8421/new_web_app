@@ -10,7 +10,7 @@
 
 <body>
     <div class="wish">
-        <h1 style="color: #fc1010;font: bold;font-family:cursive;text-align: center;animation: tglowing 2s ease infinite;font-size: 40px;">happy rose day my love</h1>
+        <h1 style="color: #fc1010;font: bold;font-family:cursive;">happy rose day my love</h1>
     </div>
     <center>
         <div class="container">
@@ -242,13 +242,34 @@
     to{
         box-shadow: 0 0 100px #ff7b7b;
     }
-@keyframes tglowing {
-    0%{box-shadow: 0 0 6px #fff;}
-    50%{box-shadow: 0 0 96px #ffffff;}
-    100%{box-shadow: 0 0 6px #fff}
     
 }
+.wish{
+    font-size: 40px;
+    border-radius:0px 40px 0px 40px;
+    color:  #fc1010;
+    text-align: center;
+    animation: glowing 2s ease infinite;
+    color: white;
+    text-align: center;
     
+    }
+.heart{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    font-size: 50px/1;  
+    color: transparent;
+    text-transform: uppercase;
+    line-height: 100px;
+    letter-spacing: 30px;
+    background: url(../img/love_icon.png) no-repeat center / cover;
+    &::before,&::after{
+        content: '';
+        position: absolute;
 }
 
     
