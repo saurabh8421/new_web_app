@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div class="teddy">
+        <div class="ear1" style="left: 80px;top: 150px;"></div>
+            <div class="ear2" style="right: 80px;top: 70px;"></div>
+        <div class="head">
+            
+            <div class="eye1"style="top: 80px;right: 50px;">
+            <div class="lash1"s style="background-color: #d48642f8; height: 22px;width: 24px;border-radius: 50%;top: -22px;position: relative;animation: flick .7s 1 ease-in-out;z-index: 26;right: 2px;"></div>
+            
+            <div class="p"></div></div>
+            <div class="eye2" style="top: 80px;left: 50px;">
+                <div class="lash1"s style="background-color: #d48642f8; height: 22px;width: 24px;border-radius: 50%;top: -22px;position: relative;animation: flick .7s 1 1s ease-in-out;z-index: 26;right: 2px;"></div>
+            <div class="p"></div></div>
+            <div class="face">
+                <div class="nose">
+                    <div class="w"></div>
+                </div>
+                <div class="mouth" style="height: 40px;width: 40px;background-color: #d48642f8;z-index: 5;border-radius: 50%;position: absolute;left: 20px;top: 28px;"></div>
+                <div class="mouth" style="height: 40px;width: 40px;background-color: #d3bbab;z-index: 5;border-radius: 50%;position: absolute;left: 18px;top: 23px;"></div>
+                <div class="mouth" style="height: 40px;width: 40px;background-color: #d48642f8;z-index: 5;border-radius: 50%;position: absolute;right: 20px;top: 28px;"></div>
+                <div class="mouth" style="height: 40px;width: 40px;background-color:#d3bbab;z-index: 5;border-radius: 50%;position: absolute;right: 18px;top: 23px;"></div>
+            </div>
+        </div>
+        <div class="tummy">
+         
+        </div>
+       <div class="heart1" style="height: 200px; width: 140px; border-radius: 150px 150px 180px 0px;background-color: #fc1010;border: none;transform: rotate(-45deg);z-index: 7;left: -20px;top: -15px;animation: heart 4s ease-out infinite;box-shadow:0px 0px 100px #fc1010;position: relative;"></div>
+        <div class="heart2" style="height: 200px; width: 140px; border-radius: 150px 150px 0px 180px;background-color: #fc1010;border: none;transform: rotate(45deg);z-index: 7;left: 20px; top: -215px;animation: heart 4s ease-out infinite;position: relative;box-shadow:0px 0px 100px 0px #fc1010; "></div>
+        <div class="arm1" style="transform: rotate(70deg);left: 130px; top: 290px;"></div>
+        <div class="arm2" style="transform: rotate(-70deg);right: 130px; top: 290px;"></div>
+        <div class="hand1" style="left: 110px;top: 355px;"></div>
+        <div class="hand2" style="right: 110px;top: 355px;"></div>
+        
+        <div class="leg1" style="height: 200px;width: 140px;border-radius: 50%;background-color: #8a480f;position: absolute;z-index: 8;right: 120px;top: 460px;"></div>
+        <div class="leg2" style="height: 200px;width: 140px;border-radius: 50%;background-color: #8a480f;position: absolute;z-index: 8;left: 120px;top: 460px;"></div>
+        <div class="foot1" style="width: 90px;height: 70px;background-color: #d3bbab;border-radius: 50%;z-index: 10;position: absolute;border: 25px solid #d48642f8;top: 540px;left: 120px;"></div>
+        <div class="foot2" style="width: 90px;height: 70px;background-color: #d3bbab;border-radius: 50%;z-index: 10;position: absolute;border: 25px solid #d48642f8;top: 540px;right: 120px;"></div>
+        </div>
+        
+    </div>
+</center>
+</body>
+<style>
+    body{
+        background-image: url(bg.jpg);
+        background-size: cover;
+    }
+    .teddy{
+        
+        height: 700px;
+        width: 600px;
+        border: 20px solid black;
+        z-index: 52;
+        position: relative;
+    }
+    .head{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #d48642f8;
+        position: relative;
+        z-index: 8;
+    }
+    .eye2,.eye1{
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 7;
+    }
+    .face{
+        height: 90px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #d3bbab;
+        top: 100px;
+        left: 40px;
+        z-index: 5;
+        position: absolute;
+    }
+    .p{
+        height: 4px;
+        width: 4px;
+        left: 9px;
+        top: 4px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+    .nose{
+        width: 40px;
+        height: 30px;
+        top: 15px;
+        position: absolute;
+        left: 40px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 7;
+    }
+    .w{
+        height: 6px;
+        width: 10px;
+        border-radius: 50%;
+        top: 4px;
+        left: 22px;
+        position: absolute;
+        background-color: #fff;
+        z-index: 8;
+    }
+    .ear1,.ear2{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: brown;
+        position: relative;
+        z-index: 1;
+        border: 20px solid #d48642f8;
+
+    }
+    .tummy{
+        height: 250px;
+        width: 200px;
+        border: 50px solid #d48642f8;
+        background-color: #d3bbab;
+        border-radius: 50%;
+        position: absolute;
+        top: 290px;
+        left: 150px;
+        z-index: 1;
+    }
+    .arm1,.arm2{
+        height: 150px;
+        width: 110px;
+        background-color:#8a480f;
+        border-radius: 50%;
+        transform: rotate(-70deg);
+        position: absolute;
+        z-index: 4;
+    }
+    .hand1,.hand2{
+        height: 80px;
+        width: 120px;
+        background-color: #d48642f8;
+        z-index: 8;
+        position: absolute;
+        border-radius: 50%;
+       
+    }
+    @keyframes flick {
+        from{
+            top: -15px;
+        }
+        to{
+            top: -2px;
+        }
+        
+    }
+   
+</style>
+</html>
