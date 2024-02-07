@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+
+<form action="send_email.php" method="post">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+  <br>
+ 
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+ 
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+ 
+  <input type="submit" value="Send">
+</form>
+
+</body>
+  <?php
+
+$errors = [];
+
+if (!empty($_POST)) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+ 
+  if (empty($name)) {
+      $errors[] = 'Name is empty';
+  }
+
+  if (empty($email)) {
+      $errors[] = 'Email is empty';
+  } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $errors[] = 'Email is invalid';
+  }
+
+  if (empty($message)) {
+      $errors[] = 'Message is empty';
+  }
+}<?php
+$errors = [];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get POST data
+    $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
+
+    // Validate form fields
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
+    }
+
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
+
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
+
+    // If no errors, send email
+    if (empty($errors)) {
+        // Recipient email address (replace with your own)
+        $recipient = "recipient@example.com";
+
+        // Additional headers
+        $headers = "From: $name <$email>";
+
+        // Send email
+        if (mail($recipient, $message, $headers)) {
+            echo "Email sent successfully!";
+        } else {
+            echo "Failed to send email. Please try again later.";
+        }
+    } else {
+        // Display errors
+        echo "The form contains the following errors:<br>";
+        foreach ($errors as $error) {
+            echo "- $error<br>";
+        }
+    }
+} else {
+    // Not a POST request, display a 403 forbidden error
+    header("HTTP/1.1 403 Forbidden");
+    echo "You are not allowed to access this page.";
+}
+?>
+</html>
