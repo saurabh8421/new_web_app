@@ -72,235 +72,129 @@
 </center>
 </body>
 <style>
-    body{
-    background-color: #122139;
-}
-.container{
-    height: 520px;
-    width: 350px;
-    background-color: transparent;
-    align-items: center;
-    align-content: center;
-    border-radius: 200px 200px 0 0;
-    border: 2px solid;
-    border-bottom: 20px solid;
-    border-color: rgb(244, 248, 248);
-    position: relative;
-}
-.container div{
-    height: 100px;
-    width: 50px;
-    background-color: #eb4c66d8;
-    display: table-cell;
-    margin-top: 100px;
-    position: absolute;
-    left: 150px;
-    border: .5px solid lightcoral;
-}
-.a1{
-    transform: rotate(20deg);
-    border-radius: 0px 80px 0px 80px;
-    z-index: 4;
-}
-.a2{
-    transform: rotate(-20deg);
-    border-radius: 80px 0px 80px;
-    z-index: 5;
-}
-.a3{
-    transform: rotate(-20deg);
-    border-radius: 0px 120px 0px 120px;
-    margin-left: -10px;
-    animation: a3 5s infinite;
-    z-index: 6;
-}
-.a4{
-    transform: rotate(20deg);
-    border-radius: 120px 0px 120px;
-    margin-left: 10px;
-    animation: a4 5s infinite;
-    z-index: 7;
-}
-.a5{
-    transform: rotate(-30deg);
-    border-radius: 0px 120px 0px 120px;
-    margin-left: -10px;
-    top: 20px;
-    margin-left: -20px;
-    animation: a5 5s infinite;
-    z-index: 8;
-}
-.a6{
-    transform: rotate(30deg);
-    border-radius: 120px 0px 120px;
-    margin-left: 10px;
-    top: 20px;
-    margin-left: 20px;
-    animation: a6 5s infinite;
-    z-index: 9;
-}
-.stick{
-    height: 200px;
-    width: 10px;
-
-}
-.a7{
-    transform: rotate(-40deg);
-    border-radius: 0px 120px 0px 120px;
-    margin-left: -10px;
-    top: 25px;
-    margin-left: -24px;
-    animation: a7 5s infinite;
-    z-index: 10;
-}
-.a8{
-    transform: rotate(40deg);
-    border-radius: 120px 0px 120px;
-    margin-left: 10px;
-    top: 25px;
-    margin-left: 24px;
-    animation: a8 5s infinite;
-    z-index: 10;
-}
-@keyframes a7 {
-    from{
-        transform: rotate(0deg);
-        top: 19px;
+body{
+        background-image: url(bg.jpg);
+        background-size: cover;
     }
-    to{
-        transform: rotate(-40deg);
-        top: 40px;
+    .teddy{
+        
+        height: 700px;
+        width: 600px;
+        border: 20px solid black;
+        z-index: 52;
+        position: relative;
     }
-}
-@keyframes a8 {
-    from{
-        transform: rotate(0deg);
-        top: 19px;
+    .head{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #d48642f8;
+        position: relative;
+        z-index: 8;
     }
-    to{
-        transform: rotate(40deg);
-        top: 40px;
-    }
-}
-@keyframes a6 {
-    from{
-        transform: rotate(-10deg);
-        top: 10px;
-    }
-    to{
-        transform: rotate(30deg);
-        top: 25px;
-    }
-}
-@keyframes a5 {
-    from{
-        transform: rotate(10deg);
-        top: 10px;
-    }
-    to{
-        transform: rotate(-30deg);
-        top: 25px;
-    }
-}
-@keyframes a3 {
-    from{
-        transform: rotate(10deg);
-        top: 0px;
-    }
-    to{
-        transform: rotate(-15deg);
-        top: 15px;
-    }
-}
-@keyframes a4 {
-    from{
-        transform: rotate(-10deg);
-        top: 0px;
-    }
-    to{
-        transform: rotate(15deg);
-        top: 15px;
-    }
-}
-.a9{
-    background-color: green;
-    height: 300px;
-    width: 120px;
-    position: absolute;
-    bottom: 148px;
-    left: 595px;
-    border-radius: 0px 0px 200px 0px;
-    z-index: 1;
-    transform: rotate(-10deg);
-}
-.a01{
-    background-color:rgb(244, 248, 248);
-    height: 300px;
-    width: 125px;
-    position: absolute;
-    /* bottom: 1px; */
-    left: 45%;
-    border-radius: 0px 0px 200px 0px;
-    z-index: 2;
-    transform: rotate(-10deg);
-}
-.a03,.a02{
-    background-color: green;
-    transform: rotate(40deg);
-    border-radius: 120px 0px 120px;
-    margin-left: 10px;
-    margin-left: 24px;
-    z-index: 14;
-
-}
-@keyframes heart {
-    from{
-        top: 20px;
-        box-shadow: 0 0 6px #fc1010;
-    }
-    to{
-        top: -100px;
-        box-shadow: 0 0 60px #fc1010;
-    }
-
-}
-@keyframes glowing {
-    from{
-        box-shadow: 0 0 6px #ff7b7b;
-    }
-    to{
-        box-shadow: 0 0 100px #ff7b7b;
-    }
-
-}
-.wish{
-    font-size: 40px;
-    border-radius:0px 40px 0px 40px;
-    color:  #fc1010;
-    text-align: center;
-    animation: glowing 2s ease infinite;
-    color: white;
-    text-align: center;
-
-    }
-.heart{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    overflow: hidden;
-    font-size: 50px/1;  
-    color: transparent;
-    text-transform: uppercase;
-    line-height: 100px;
-    letter-spacing: 30px;
-    background: url(../img/love_icon.png) no-repeat center / cover;
-    &::before,&::after{
-        content: '';
+    .eye2,.eye1{
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
         position: absolute;
-}
+        z-index: 7;
+    }
+    .face{
+        height: 90px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #d3bbab;
+        top: 100px;
+        left: 40px;
+        z-index: 5;
+        position: absolute;
+    }
+    .p{
+        height: 4px;
+        width: 4px;
+        left: 9px;
+        top: 4px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+    .nose{
+        width: 40px;
+        height: 30px;
+        top: 15px;
+        position: absolute;
+        left: 40px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 7;
+    }
+    .w{
+        height: 6px;
+        width: 10px;
+        border-radius: 50%;
+        top: 4px;
+        left: 22px;
+        position: absolute;
+        background-color: #fff;
+        z-index: 8;
+    }
+    .ear1,.ear2{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: brown;
+        position: relative;
+        z-index: 1;
+        border: 20px solid #d48642f8;
 
+    }
+    .tummy{
+        height: 250px;
+        width: 200px;
+        border: 50px solid #d48642f8;
+        background-color: #d3bbab;
+        border-radius: 50%;
+        position: absolute;
+        top: 290px;
+        left: 150px;
+        z-index: 1;
+    }
+    .arm1,.arm2{
+        height: 150px;
+        width: 110px;
+        background-color:#8a480f;
+        border-radius: 50%;
+        transform: rotate(-70deg);
+        position: absolute;
+        z-index: 4;
+    }
+    .hand1,.hand2{
+        height: 80px;
+        width: 120px;
+        background-color: #d48642f8;
+        z-index: 8;
+        position: absolute;
+        border-radius: 50%;
+       
+    }
+    @keyframes flick {
+        from{
+            top: -15px;
+        }
+        to{
+            top: -2px;
+        }
+        
+    }
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+ 
+}
 </style>
     </section>
     <style>
@@ -309,7 +203,7 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
+  
 }
 body{
   font-family: montserrat;
