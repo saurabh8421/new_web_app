@@ -45,8 +45,8 @@
         <div class="smile" style="height: 60px; width: 50px;border: 3px solid transparent;border-bottom:3px solid black; border-radius: 50%;top: -25px;position: absolute;"></div>
         <div class="smile1" style="height: 5px;border-left: 3px solid black;width: 0px;position: absolute;top: 34px;left: 27px;transform: rotate(-5deg);"></div>
         </div>
-        <div style="top: 80px;position: absolute;left: 125px;z-index: 50;">
-        <h1 style="color: red;font-size: 120px;z-index: unset;top: 20px;">♥</h1>
+        <div style="top: 90px;position: absolute;left: 128px;z-index: 500;">
+        <h1 style="color: red;font-size: 110px;z-index: unset;top: 20px;">♥</h1>
         </div>
         <div class="ear11" style="top: 10px;left: 100px;transform: rotate(20deg);"></div>
         <div class="ear12" style="top: 15px;left: 25px;transform: rotate(-40deg);"></div>
@@ -78,14 +78,16 @@
         <div class="smile" style="height: 60px; width: 50px;border: 3px solid transparent;border-bottom:3px solid black; border-radius: 50%;top: -25px;position: absolute;"></div>
         <div class="smile1" style="height: 5px;border-left: 3px solid black;width: 0px;position: absolute;top: 34px;left: 27px;transform: rotate(-5deg);"></div>
         </div>
-        
+        <div style="top: 90px;position: absolute;left: 128px;z-index: 500;">
+          <h1 style="color: red;font-size: 110px;z-index: unset;top: 20px;">♥</h1>
+          </div>
         <div class="ear11" style="top: 10px;left: 100px;transform: rotate(20deg);"></div>
         <div class="ear12" style="top: 15px;left: 25px;transform: rotate(-40deg);"></div>
         <div class="tummy" id="egg"></div>
-        <div class="feet" style="box-shadow: -10px -8px 4px 2px #d17d34a9;right: -20px;position: absolute;">
+        <div class="feet" style="box-shadow: -10px -8px 4px 2px #d17d34a9;right: -40px;position: absolute;animation: walk 2s ease-in-out infinite;">
             <div class="foot"></div>
         </div>
-        <div class="feet" style="left: 50px;z-index: -5;background-color: #dd893f;">
+        <div class="feet" style="left: 50px;z-index: -5;background-color: #dd893f;animation: walk 2s 1s ease-in-out infinite;">
             <div class="foot"></div>
         </div>
     </div>
@@ -111,6 +113,7 @@
         z-index: 1;
         top: -350px;
         left: 20px;
+        animation: move2 8s infinite;
     }
     .face1,.face{
         height: 120px;
@@ -187,7 +190,7 @@
       border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
       position: absolute;
       top: 120px;
-      left: 25px;
+      left: 40px;
       transform: rotate(180deg);
       top: 220px;
       box-shadow: 0 0  10px#f7c395f8 inset;
@@ -307,13 +310,17 @@ section{
 }
 @keyframes move {
   0%{ transform: translateX(-500px)}
-  100%{transform: translateX(0px)}
+  100%{transform: translateX(0deg)}
 }
 @keyframes walk {
   0%{ transform: rotate(130deg)}
   50%{ transform: rotate(220deg)}
   100%{ transform: rotate(130deg)}
 
+}
+@keyframes move2{
+  0%{ left: 500px;}
+  100%{}
 }
 
 
